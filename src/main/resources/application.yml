@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/freelance-schema
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+       enable_lazy_load_no_trans: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+    view:
+      prefix: /WEB-INF/
+
+  security:
+    oauth2:
+      client:
+        registration:
+         google:
+          clientId: 343246613451-are81bprie06otodve17rctf8evmtfo0.apps.googleusercontent.com
+          clientSecret: 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
+          scope:
+           - email
+           - profile
+                    
+         facebook:
+          clientId: YOUR_FACEBOOK_APP_CLIENT_ID
+          clientSecret: YOUR_FACEBOOK_APP_SECRET_KEY
+          scope:
+           - email
+           - public_profile
