@@ -30,6 +30,10 @@
  <a href="/"><i class="fa fa-home"  style="color: white; font-size: 50px;"></i></a>
  </div>
   <div class="center">
+  <div>
+<a class="btn btn-lg btn-secondary" th:href="@{/oauth2/authorization/google}">Login with Google</a>
+</div>
+
       <h1>Login</h1>
       <form:form action="/login" method="post" modelAttribute="newLogin">
         <div class="txt_field">
